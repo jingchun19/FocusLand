@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 264739466, guid: c9252c89e3ae8fe478b1382e0b3b8be1, type: 3}
+  m_Sprite: {fileID: 1897480495, guid: 60828c0991371104daa025d851e1c18b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &6913257759548327917
 GameObject:
   m_ObjectHideFlags: 0

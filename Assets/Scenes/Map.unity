@@ -275,7 +275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00016046775}
+  m_AnchoredPosition: {x: -0.00005802688, y: 0.000032778655}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &216698401
@@ -474,8 +474,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246323288}
   m_HandleRect: {fileID: 1246323287}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.99999994
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -600,10 +600,10 @@ RectTransform:
   - {fileID: 1065948606}
   m_Father: {fileID: 1747506696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282.24387, y: 177.82744}
-  m_SizeDelta: {x: 176.1323, y: 48.4367}
+  m_AnchorMin: {x: 0.5464792, y: 0.5764927}
+  m_AnchorMax: {x: 0.5794792, y: 0.59123904}
+  m_AnchoredPosition: {x: 0.5, y: -1.5}
+  m_SizeDelta: {x: 4.999893, y: 7.200001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362631669
 MonoBehaviour:
@@ -783,8 +783,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1094,8 +1094,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 160553810}
   m_HandleRect: {fileID: 160553809}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999504
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1207,8 +1207,8 @@ Canvas:
   m_GameObject: {fileID: 1747506692}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 2140965643}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_Content: {fileID: 216698400}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135

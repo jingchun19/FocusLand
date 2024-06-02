@@ -12,6 +12,8 @@ public class ShopManager : MonoBehaviour
     public ShopTemplate[] shopPanels;
     public GameObject[] shopPanelsGO;
     public Button[] myPurchaseBtns;
+    public GameObject shopDescriptionGO;
+    public ShopDescription shopDescription;
 
     void Start()
     {
@@ -66,5 +68,58 @@ public class ShopManager : MonoBehaviour
             CheckPurchasable();
             //unlock item
         }
+    }
+
+    public void LoadDescription(int btnNo)
+    {
+        Debug.Log("Loading description for button number: " + btnNo);
+
+        if (shopDescriptionGO == null)
+        {
+            Debug.LogError("shopDescriptionGO is not assigned!");
+            return;
+        }
+
+        if (shopDescription == null)
+        {
+            Debug.LogError("shopDescription is not assigned!");
+            return;
+        }
+
+        if (shopItemSO == null || shopItemSO.Length <= btnNo)
+        {
+            Debug.LogError("shopItemSO is not assigned or btnNo is out of bounds!");
+            return;
+        }
+
+        shopDescriptionGO.SetActive(true);
+
+        if (shopDescription.titleTxt == null)
+        {
+            Debug.LogError("shopDescription.titleTxt is not assigned!");
+            return;
+        }
+
+        if (shopDescription.descriptionTxt == null)
+        {
+            Debug.LogError("shopDescription.descriptionTxt is not assigned!");
+            return;
+        }
+
+        if (shopDescription.costTxt == null)
+        {
+            Debug.LogError("shopDescription.costTxt is not assigned!");
+            return;
+        }
+
+        Debug.Log("All necessary references are assigned, setting text fields.");
+
+        shopDescription.titleTxt.text = shopItemSO[btnNo].title;
+        shopDescription.descriptionTxt.text = shopItemSO[btnNo].Description;
+        shopDescription.costTxt.text = shopItemSO[btnNo].baseCost.ToString();
+        shopDescription.BtnNo = btnNo;
+        shopDescription.shopManager = this;
+
+        Debug.Log("Description loaded successfully for button number: " + btnNo);
     }
 }
